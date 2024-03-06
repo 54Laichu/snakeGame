@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#game {
+  border: 5px solid greenyellow;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+#score {
+  margin-top: 1rem;
+}
+
+#score, #highScore {
+  font-size: 2rem;
+  color: greenyellow;
+  padding: 10px;
+}
+
+#start {
+  padding: 0.25rem 0.5rem;
+  background-color: yellow;
+  font-size: 1.2rem;
+  color: #000;
+  display: block;
+  margin-top: 1rem;
+  cursor: pointer;
+}
