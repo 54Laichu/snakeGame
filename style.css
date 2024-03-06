@@ -12,7 +12,7 @@ body {
   justify-content: center;
 }
 
-#game {
+#gameBoard {
   border: 5px solid greenyellow;
   top: 60%;
   left: 50%;
