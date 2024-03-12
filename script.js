@@ -92,6 +92,20 @@ function draw() {
     snakeY += gameBlock;
   }
 
+  // 穿越牆壁從另一邊出現
+  if (snakeX < 0) {
+    snakeX = gameBoard.width - gameBlock;
+  } else if (snakeX >= gameBoard.width) {
+    snakeX = 0;
+  };
+
+  if (snakeY < 0) {
+    snakeY = gameBoard.height - gameBlock;
+  } else if (snakeY >= gameBoard.height) {
+    snakeY = 0;
+  };
+
+
   // 吃到食物
   snake.pop();
   snake.unshift({ x: snakeX, y: snakeY });
