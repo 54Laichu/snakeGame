@@ -29,6 +29,25 @@ snake[3] = {
 
 // 蛇預設移動的方向
 let direction = "Right";
+window.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight") {
+    if (direction !== "Left") {
+      direction = "Right";
+    }
+  } else if (e.key === "ArrowLeft") {
+    if (direction !== "Right") {
+      direction = "Left";
+    }
+  } else if (e.key === "ArrowUp") {
+    if (direction !== "Down") {
+      direction = "Up";
+    }
+  } else if (e.key === "ArrowDown") {
+    if (direction !== "Up") {
+      direction = "Down";
+    }
+  }
+})
 
 // let food = {
 //   x: Math.floor(Math.random() * column) * gameBlock,
